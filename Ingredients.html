@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+ <title> Zane's Client's Food</title>
+ <meta name="viewport" content="width=device-width, initial scale=1">
+ <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled JavaScript -->
+<link rel="stylesheet" href="styling.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="shoppingcart.js"></script>
+</head>
+<style>
+    .logo{ 
+       position: absolute;
+       left: 30px;
+       height: 85px !important;
+       width: 85px !important;
+       
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+
+    background-color: black;
+}
+.container{
+    margin-top: 20px;
+    padding: 40px 20px;
+}
+.box{
+    padding: 40px 30px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.box:hover{
+    box-shadow: 2px 2px 10px #a5a5a5;
+    transform: scale(1.03);
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    object-fit: contain;
+    width: 35px;
+    height: 35px;
+    /* padding: 20px; */
+}
+p.text-muted{
+    margin: 0;
+    font-size: 0.9rem;
+}
+b{
+    font-size: 1.12rem;
+}
+.rounded-circle{
+    width: 85px;
+    height: 85px;
+}
+.blue{
+    background-color: #bedcfa;
+    transform: rotateZ(90deg);
+}
+.pale-blue{
+    background-color: #eff8ff;
+}
+.pale-orange{
+    background-color: #ffe5b9;
+}
+.pale-purple{
+    background-color: #e8e8e8;
+}
+.pale-cyan{
+    background-color: #cffffe;
+}
+.pale-pink{
+    background-color: #ffe4e4;
+}
+.pale-pale{
+    background-color: #f4eeff;
+}
+.pale-green{
+    background-color: #a0ffe6;
+}
+.pale-pista{
+    background-color: #dbf6e9;
+}
+
+</style>
+</head>
+<html>
+    <header> 
+        <nav class="navbar navbar-expand-sm bg-black fixed-top">
+            <div class="container-fluid">
+              <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarCenteredExample">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <div class="logo">
+                    <img src="Screenshot 2023-09-18 at 12.55.25.png" class="rounded-circle">
+                </div>
+
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="MyHomeWebpage.html" style="color: red;  text-decoration: none; font-size: 50px;">HOME</a>
+
+                </li>
+              </ul>
+            </div>
+          </nav>  
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </header>
+          <div class="container bg-vlack rounded">
+            <div class="h4 font-weight-bold text-center py-3"><span style="color:red;">INGREDIENTS</span></div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+                    <div class="box bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle mx-3 d-flex align-items-center justify-content-center blue">
+                                <img src= "https://publish.purewow.net/wp-content/uploads/sites/2/2021/08/types-of-flour-all-purpose-flour.jpg?fit=680%2C489" style="rotate: -90deg; max-width: 200%; width: 60px; height: auto; border-radius: 40%;">
+                            </div>
+                            <div class="d-flex flex-column" class="product" id="product10">
+                                <b> 1.5kg of Flour</b>
+                                <a href="#">
+                                    <p class="text-muted">£0.90</p>
+                                    <button onclick="addtoCart('1.5k of Flour', 3.50)" style="font-size: 14px; text-align: center;">‎ ‎ ‎ ‎ ‎ Add to Cart </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+                    <div class="box bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-orange">
+                                <img src="https://www.realsimple.com/thmb/T3U2GqbHOHA8l9GVugp7z3XVHVU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/types-of-butter-varieties-guide-2000-234a60f0f2f345efb518970d321d0320.jpg" alt="" style=" max-width: 200%; width: 60px; height: auto; border-radius: 40%;">
+                            </div>
+                            <div class="d-flex flex-column" class="product" id="product11">
+                                <b>450g of Butter</b>
+                                <a href="#">
+                                    <p class="text-muted">£1.70</p>
+                                    <button onclick="addtoCart('Butter', 1.70)" style="font-size: 14px; text-align: center;">‎ ‎ ‎ ‎ ‎Add to Cart  </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+                    <div class="box bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-purple">
+                                <img src="https://www.canr.msu.edu/outreach/uploads/images/salt-6728600_1280.jpg?language_id=1"  style ="max-width: 200%; width: 45px; height: auto; border-radius: 40%;" alt="">
+                            </div>
+                            <div class="d-flex flex-column" class="product" id="product12">
+                                <b>750g of Table Salt</b>
+                                <a href="#">
+                                  
+                                    <p class="text-muted">£0.65</p>
+                                    <button onclick="addtoCart('Table Salt', 0.65)" style="font-size: 14px; text-align: center;">‎ ‎ ‎ ‎ ‎ Add to Cart</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-lg-3 my-3">
+                    <div class="box bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-cyan">
+                                <img src="https://i.guim.co.uk/img/media/43442656c722147e053264b6b914b3258642db2e/0_37_3812_2290/master/3812.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=24943c703401dec3d0e8e0da56fec7aa" alt="" style="max-width: 200%; width: 50px; height: 60px; border-radius: 40%;">
+                            </div>
+                            <div class="d-flex flex-column" class="product" id="product13">
+                                <b>5pcs of Garlic</b>
+                                <a href="#">
+                                    <p class="text-muted">£1.80</p>
+                                    <button onclick="addtoCart('Garlic', 1.80)" style="font-size: 14px; text-align: center;">‎ ‎ ‎ ‎ ‎ Add to Cart  </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-lg-3 my-3">
+                    <div class="box bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-pink">
+                                <img src="https://cdn.britannica.com/94/151894-050-F72A5317/Brown-eggs.jpg" style="max-width: 200%; width: 60px; height: auto; border-radius: 70%;" alt="">
+                            </div>
+                            <div class="d-flex flex-column" class="product" id="product14">
+                                <b>12 Free Range Eggs</b>
+                                <a href="#">
+                                    <p class="text-muted">£2.50</p>
+                                    <button onclick="addtoCart('Free Range Eggs', 2.50)" style="font-size: 14px; text-align: center;">‎ ‎ ‎  ‎ ‎ Add to Cart</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-lg-3 my-3">
+                    <div class="box bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-orange">
+                                <img src="https://www.allrecipes.com/thmb/RKpnSHLUDT2klppYgx8jAF47GyM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/52490-PuertoRicanSteamedRice-DDMFS-061-4x3-3c3da714aa614037ad1c135ec303526d.jpg" style="max-width: 200%; width: 45px; height: auto; border-radius: 70%;" alt="">
+                            </div>
+                            <div class="d-flex flex-column" class="product" id="product15">
+                                <b>250g of Basmati Rice</b>
+                                <a href="#">
+                                    <p class="text-muted">£0.65</p>
+                                    <button onclick="addtoCart('Basmati Rice', 0.65)" style="font-size: 14px; text-align: center;">‎ ‎ ‎  ‎ ‎ Add to Cart‎ ‎ ‎ ‎ ‎  </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+                    <div class="box bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-orange">
+                                <img src="https://d2jx2rerrg6sh3.cloudfront.net/images/news/ImageForNews_753423_16891547829825380.jpg" style="max-width: 200%; width: 45px; height: auto; border-radius: 70%;" alt="">
+                            </div>
+                            <div class="d-flex flex-column" class="product" id="product16">
+                                <b>250g of Honey</b>
+                                <a href="#">
+                                    <p class="text-muted">£2</p>
+                                    <button onclick="addtoCart('Honey', 2.00)" style="font-size: 14px; text-align: center;">‎ ‎ ‎  ‎ ‎ Add to Cart‎ ‎ ‎ ‎ ‎  </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+                    <div class="box bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-green">
+                                <img src="https://www.southernliving.com/thmb/lz4xg7kerf1aCahRlp4WhLbYi5k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1279120925-1-175489607f764e03be03927e5b90c11a.jpg  " style="max-width: 200%; width: 45px; height: auto; border-radius: 70%;" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <b>1kg of Onions</b>
+                                <a href="#">
+                                    <p class="text-muted">£1</p>
+                                    <button onclick="addtoCart('1kg of Onions', 1.00)" style="font-size: 14px; text-align: center;">‎ ‎ ‎  ‎ ‎ Add to Cart‎ ‎ ‎ ‎ ‎  </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+                    <div class="box bg-white">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-pista">
+                                <img src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/tomatoes-1296x728-feature.jpg" style="max-width: 200%; width: 60px; height: auto; border-radius: 70%;" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <b>750g of Tomatoes</b>
+                                <a href="#">
+                                    <p class="text-muted">£1.80</p>
+                                    <button onclick="addtoCart('750g of Tomatoes', 1.80)" style="font-size: 14px; text-align: center;">‎ ‎ ‎  ‎ ‎ Add to Cart‎ ‎ ‎ ‎ ‎  </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "cart">
+
+            <h2 style="text-align: center; color: red;"> SHOPPING CART </h2>
+    
+            <ul id = "cartItems" style="color: red;">
+    
+            </ul>
+    
+            <p style="text-align: center; color: red;">Total: £<span id = "cartTotal"> 0.00</span></p>
+            
+            <button id="showbutton" onclick="toggleFormVisibility(true)">Checkout</button>
+
+            <form class="row g-3" id="checkoutform">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label" style="color: red;">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label" style="color: red;">Password</label>
+                    <br>
+                    <input type="password" class a="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label" style="color: red;">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label" style="color: red;">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label" style="color: red;">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label" style="color: red;">Country</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>United Kingdom</option>
+                        <option>United States</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label" style="color: red;">Post Code/Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Pay Securely</button>
+                </div>
+            </form>
+
+            <p class="btnwrap">
+           
+
+                <button onclick="toggleFormVisibility(false)" id="hidebutton">Hide Checkout</button>
+
+            <script>
+               function toggleFormVisibility(show) {
+            var form = document.getElementById("checkoutform");
+            var showbutton = document.getElementById("showbutton");
+            var hidebutton = document.getElementById("hidebutton");
+
+            if (show) {
+                form.style.display = "block";
+                showbutton.style.display = "none";
+                hidebutton.style.display = "block";
+         } else {
+                form.style.display = "none";
+                showbutton.style.display = "block";
+                hidebutton.style.display = "none";
+            }
+        }
+
+            // Initially hide the form and the checkout button
+            toggleFormVisibility(false);
+                
+            </script>
+
+
+            </p>
+    
+        
+        </div>
+    </div>
+</div>
